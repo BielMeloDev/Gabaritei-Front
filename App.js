@@ -5,8 +5,7 @@ import { ActivityIndicator } from 'react-native';
 
 export default function App() {
   return (
-    <View style={[styles.container, styles.horizontal]}>
-      <ActivityIndicator size="larger" />
+    <View style={[styles.container]}>
       <Image
         style={styles.img}
         source={{
@@ -59,11 +58,5 @@ const styles = StyleSheet.create({
   section: {
     flex: 1,
     paddingTop: StatusBar.currentHeight,
-  },
-
-  horizontal: {
-    flexDirection: 'column',
-    justifyContent: 'space-around',
-    padding: 20,
   },
 });
